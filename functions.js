@@ -1,45 +1,36 @@
 let person = "Maryam";
 
-let GreetPerson = (person) => {
+let greet = (person) => {
 console.log(`Hello ${person}`);
 }
-GreetPerson(person);
+greet(person);
 
-
-
-let OddNumber = (x) => {
+let isOdd = (x) => {
   if (x%2 == 1){
-    return console.log(`OddNumber (${x}) -> true`);
+    return (true)
   } 
-  else {return console.log(`OddNumber (${x}) -> false`);
+  else {return (false);
 }
 };
-OddNumber(3);
+console.log(isOdd(3));
 
-
-
-let OddsSmallerThan = (y) => {
+let oddsSmallerThan = (y) => {
   if (y%2 == 1){
-    a = (y - 1)/2;
-    return console.log(`OddsSmallerThan (${y}) -> ${a}`);
+    return y = (y - 1)/2;
   }
 };
-OddsSmallerThan(7);
+console.log(oddsSmallerThan(7));
 
-
-
-let SqauredOrDoubled = (z) => {
+let squareOrDouble = (z) => {
   if (z%2 == 1){
-    b = z^2
-    return console.log(`Sqaured (${z}) -> ${b}`);
+    return z = z^2
   }
   else 
-  b = z+z;
-  { return console.log(`Doubled (${z}) -> ${b}`);
+  { return z = z+z;
 }
 };
-SqauredOrDoubled(8);
+console.log(squareOrDouble(8));
 
 
 
-module.exports = {GreetPerson,OddNumber,OddsSmallerThan,SqauredOrDoubled};
+module.exports = {greet,isOdd,oddsSmallerThan,squareOrDouble};
