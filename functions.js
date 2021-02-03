@@ -1,18 +1,22 @@
-let person = "Maryam";
-
 let greet = (person) => {
 console.log(`Hello ${person}`);
-}
-greet(person);
+};
+
+greet("Maryam");
+
+
 
 let isOdd = (x) => {
   if (x%2 == 1){
-    return (true)
+    return (true);
   } 
   else {return (false);
-}
+  }
 };
-console.log(isOdd(3));
+console.log(isOdd(7));
+console.log(isOdd(10));
+
+
 
 let oddsSmallerThan = (y) => {
   if (y%2 == 1){
@@ -20,16 +24,20 @@ let oddsSmallerThan = (y) => {
   }
 };
 console.log(oddsSmallerThan(7));
+console.log(oddsSmallerThan(15));
+
+
 
 let squareOrDouble = (z) => {
   if (z%2 == 1){
-    return z = z^2
+    return z = z*z
   }
   else 
   { return z = z+z;
 }
 };
-console.log(squareOrDouble(8));
+console.log(squareOrDouble(16));
+console.log(squareOrDouble(9));
 
 
 
