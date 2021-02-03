@@ -20,9 +20,10 @@ console.log(isOdd(10));
 
 let oddsSmallerThan = (y) => {
   if (y%2 == 1){
-    return y = (y - 1)/2;
-  }
+    return y = ((y-1)/2);
+}
 };
+
 console.log(oddsSmallerThan(7));
 console.log(oddsSmallerThan(15));
 
